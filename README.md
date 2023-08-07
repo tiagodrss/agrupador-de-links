@@ -34,7 +34,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 O projeto é um agrupador de links, utilizado como cartão de visitas online, construído como parte do aprendizado em desenvolvimento Front-End fornecido pela plataforma [RocketSeat](https://rocketseat.com.br)
 
-- [Acesse o projeto finalizado, online](https://maykbrito.github.io/devlinks)
+- [Acesse o projeto finalizado, online](https://tiagodrss.github.io/agrupador-de-links/)
 
 ## 🔖 Layout
 
