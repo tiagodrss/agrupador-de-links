@@ -28,7 +28,7 @@ body{
     
     /* background: color image repeat position/size */
     background: var(--bg-url) no-repeat top center/cover;
-
+    height: 100vh;
 }
 
 body *{ /* Seletor universal, aplica propriedades a todos elementos do body */
@@ -45,6 +45,7 @@ body *{ /* Seletor universal, aplica propriedades a todos elementos do body */
 
 }
 
+/* perfil */
 #profile{
     text-align: center;
     padding: 24px;
@@ -55,18 +56,13 @@ body *{ /* Seletor universal, aplica propriedades a todos elementos do body */
 }
 
 #profile p{
-    
     color: var(--text-color);
-
-    
     /*font-family: Inter;*/   /* já declarado */
     /*font-size: 16px;*/   /* padrão para navegadores */
     /*font-style: normal;*/   /* padrão */
     font-weight: 500;
     line-height: 24px;
     margin-top: 8px;
-    
-    
 }
 
 
@@ -112,7 +108,7 @@ body *{ /* Seletor universal, aplica propriedades a todos elementos do body */
 }
 
 
-
+/* Lista */
 ul{
     list-style: none;
     display: flex;
@@ -149,6 +145,8 @@ ul li a:hover{
 
 }
 
+
+/* Social media e rodapé */
 #socialmedia{
     display: flex;
     padding: 24px 0;
@@ -173,4 +171,15 @@ footer{
     padding: 24px 0px;
     text-align: center;
     font-size: 14px;
+}
+
+
+/* media queries */
+@media(min-width: 700px){      /* Define regras */
+    :root{
+        --bg-url: url(./assets/bg-desktop.jpg);
+    }
+    .light{
+        --bg-url: url(./assets/bg-desktop-light.jpg);
+    }
 }
