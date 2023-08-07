@@ -1,0 +1,175 @@
+* {
+        margin: 0; /* resetar configurações padrão do navegador */
+        padding: 0; /* resetar configurações padrão do navegador */
+        box-sizing: border-box;
+}
+
+:root{ /* pseudo selector para raiz do html */
+    --text-color: white;
+    --bg-url: url(./assets/bg-mobile.jpg);
+    --stroke-color: rgba(255, 255, 255, 0.5);
+    --surface-color: rgba(255, 255, 255, 0.1);
+    --surface-color-hover: rgba(0, 0, 0, 0.05);
+    --highlight-color: rgba(255, 255, 255, 0.2);
+    --switch-bg-url: url(./assets/moon-stars.svg); 
+}
+
+.light{ /* Definindo para elementos pertencentes a classe light */
+    --text-color: black;
+    --bg-url: url(./assets/bg-mobile-light.jpg);
+    --stroke-color: rgba(0, 0, 0, 0.5); 
+    --surface-color: rgba(0, 0, 0, 0.05);
+    --surface-color-hover: rgba(0, 0, 0, 0.02);
+    --highlight-color: rgba(0, 0, 0, 0.1);
+    --switch-bg-url: url(./assets/sun.svg);
+}
+
+body{
+    
+    /* background: color image repeat position/size */
+    background: var(--bg-url) no-repeat top center/cover;
+
+}
+
+body *{ /* Seletor universal, aplica propriedades a todos elementos do body */
+    font-family: 'Inter', sans-serif;
+    color: var(--text-color);
+
+}
+
+#container{
+    width: 360px;
+    margin: 56px auto 0px;
+    padding: 0 24px;
+
+}
+
+#profile{
+    text-align: center;
+    padding: 24px;
+}
+
+#profile img{
+    width: 112px;
+}
+
+#profile p{
+    
+    color: var(--text-color);
+
+    
+    /*font-family: Inter;*/   /* já declarado */
+    /*font-size: 16px;*/   /* padrão para navegadores */
+    /*font-style: normal;*/   /* padrão */
+    font-weight: 500;
+    line-height: 24px;
+    margin-top: 8px;
+    
+    
+}
+
+
+/* switch */
+#switch{
+    position: relative; /* Torna-se a referência absoluta de seus elementos */ 
+    width: 64px;
+    margin: 0 auto;
+    padding: 4px 0;
+}
+
+
+#switch button{
+    display: flex;
+    width: 32px;
+    height: 32px;
+    background: white var(--switch-bg-url) no-repeat center;
+    border: 0;
+    border-radius: 50%;
+
+    position: absolute; /* Aplica um referenciamento global de posição */
+    z-index: 1; /* índice do eixo z, posicionamento em sobreposições */
+    left: 0;
+    transform: translateY(-50%);
+    top: 50%;
+}
+
+.light #switch button{
+    right: 0;
+    left: initial;
+}
+
+
+#switch span{
+    display: block;
+    height: 24px;
+    width: 64px;
+    border-radius: 9999px;
+    background: var(--surface-color);
+    border: 1px solid var(--stroke-color);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+
+
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px 0;
+}
+
+ul li a{
+
+    display: flex; /* Dispõe os elementos dentro da caixa de maneira flexível, preenchendo o espaço fornecedio*/
+/*  display: block;
+    text-align: center; */
+    
+    justify-content: center;
+    align-items: center;
+    padding: 16px 24px;
+    background: var(--surface-color);
+    border: 1px solid var(--stroke-color);
+    border-radius: 8px;
+
+    -webkit-backdrop-filter: blur(4px);
+    text-decoration: none;
+    font-weight: 500; /*Como 400 é o padrão, identifica 500 como 'bold' (poderia ser usado) */
+
+    transition: background 0.3s; /* define a transição de hover */
+}   
+
+/* pseudo-selector -> aplica propriedades para passagem do mouse */
+ul li a:hover{
+
+    background: var(--surface-color-hover);
+    border: 1.5px solid var(--text-color);
+
+}
+
+#socialmedia{
+    display: flex;
+    padding: 24px 0;
+    justify-content: center;
+}
+
+#socialmedia a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    padding: 16px;
+    border-radius: 50%;
+    transition: background 0.2s;
+}
+
+#socialmedia a:hover{
+    background: var(--highlight-color);
+}
+
+footer{
+    padding: 24px 0px;
+    text-align: center;
+    font-size: 14px;
+}
