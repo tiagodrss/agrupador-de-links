@@ -38,11 +38,10 @@ O projeto é um agrupador de links, utilizado como cartão de visitas online, co
 
 ## 🔖 Layout
 
-Você pode visualizar o layout original do projeto através [DESSE LINK](https://www.figma.com/file/UO2UT4Zk3DB8xn9TYNMxMe/DevLinks-%E2%80%A2-Projeto-Discover-(Community)?type=design&node-id=1437%3A191&mode=design&t=4pwpp6468UNTU1RC-1). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
+Você pode visualizar o layout original do projeto através [desse link](<https://www.figma.com/file/UO2UT4Zk3DB8xn9TYNMxMe/DevLinks-%E2%80%A2-Projeto-Discover-(Community)?type=design&node-id=1437%3A191&mode=design&t=4pwpp6468UNTU1RC-1>). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
 
 ## :memo: Licença
 
 Esse projeto está sob a licença MIT.
 
 ---
-
